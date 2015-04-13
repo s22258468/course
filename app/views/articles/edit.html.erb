@@ -1,0 +1,15 @@
+<h2>課程文章</h2>
+
+<%= form_for @article do|f|%>
+<div>
+	標題
+<%=f.text_field :title %>
+
+</div>
+<div>
+	內容
+<%=f.text_area :content%>
+
+</div>
+<%=f.submit%>
+<%end%>
